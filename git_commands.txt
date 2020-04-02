@@ -10,7 +10,7 @@ git push origin master
 git clone <url>        -- This is to pull entire code from master.
 git pull origin master  -- This is to pull only the changes from master.
 git branch
-git log --all --decorate --oneline --graph
+git log --all --decorate --oneline --graph1
 
 git branch --merged
 git merge <brancg name>
