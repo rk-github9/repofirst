@@ -1,0 +1,34 @@
+git init
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git add remote origin <url>
+git status
+git add .
+git status
+git commit -m "any comment"
+git push origin master
+git clone <url>        -- This is to pull entire code from master.
+git pull origin master  -- This is to pull only the changes from master.
+git branch
+git log --all --decorate --oneline --graph
+
+git branch --merged
+git merge <brancg name>
+
+git branch -d <branch name>      --- To delete the branch
+git branch -D <branch name>      --- To force delete the branch
+
+How to shift from one branch to other
+=======================================
+1. git pull origin <branch name>  -- To create particular branch from master 
+2. git checkout <branch name>  -- TO switch to that branch and access.
+3. git branch  -- To check the which branch git is pointing to.
+
+
+
+SSH key (Public Key) -- This is required only to push the code to repository.
+                        No key is required to pull the code from respository.
+
+To notify the reviewer about the changes in code, developer will raise a Pull request ( Reviewer Name) and click on " Create Pull Request" . This will send a notification to the reviewer. The status of the request will be in "Open state"
+
+Note: Once reviwer review the code and approve, that means " Close Request" then only code will merge into master.
